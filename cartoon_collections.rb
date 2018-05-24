@@ -19,7 +19,7 @@ end
 def find_the_cheese(cheeses)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheeses.select |x|
+  cheeses.select do |x|
     cheese_types.include?(x)
   end
 end
